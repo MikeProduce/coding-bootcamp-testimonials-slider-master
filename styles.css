@@ -23,17 +23,18 @@
   padding-left: 300px;
 }
 .container-content {
-  display: grid;
+  display: none;
+}
+.container-content2 {
+  display: none;
 }
 .girl-img {
   border-radius: 5px;
   position: absolute;
   margin-left: 715px;
-  margin-top: 142px;
+  margin-top: 139px;
   z-index: 1;
-  -webkit-box-shadow: 0 8px 6px -6px rgb(64, 64, 64);
-  -moz-box-shadow: 0 8px 6px -6px rgb(50, 50, 50);
-  box-shadow: 0 8px 6px -6px rgb(56, 56, 56);
+  box-shadow: 0 50px 40px -50px hsl(240, 38%, 20%);
 }
 .quote {
   font-size: 32px;
@@ -80,9 +81,7 @@
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   border-style: none;
-  -webkit-box-shadow: 0 8px 6px -6px rgb(133, 131, 131);
-  -moz-box-shadow: 0 8px 6px -6px rgb(95, 93, 93);
-  box-shadow: 0 8px 6px -6px rgb(115, 115, 115);
+  /* box-shadow: 1px 7px 6px -6px rgb(115, 115, 115); */
 }
 .leftbutton {
   position: absolute;
@@ -94,7 +93,7 @@
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border-style: none;
-  -webkit-box-shadow: 0 8px 6px -6px rgb(108, 106, 106);
+  /* -webkit-box-shadow: 0 8px 6px -6px rgb(108, 106, 106);
   -moz-box-shadow: 0 8px 6px -6px rgb(112, 109, 109);
-  box-shadow: 0 8px 6px -6px rgb(132, 131, 131);
+  box-shadow: 1px 7px 6px -6px rgb(132, 131, 131); */
 }
