@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-height: 820px;
+}
+
+.slope-img {
+  position: absolute;
+  padding-top: 666px;
+}
+.round-img {
+  position: absolute;
+  padding-left: 650px;
+  padding-top: 75px;
+}
+.arrows-img {
+  position: absolute;
+  padding-top: 250px;
+  padding-left: 300px;
+}
+.container-content {
+  display: grid;
+}
+.girl-img {
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 715px;
+  margin-top: 142px;
+  z-index: 1;
+  -webkit-box-shadow: 0 8px 6px -6px rgb(64, 64, 64);
+  -moz-box-shadow: 0 8px 6px -6px rgb(50, 50, 50);
+  box-shadow: 0 8px 6px -6px rgb(56, 56, 56);
+}
+.quote {
+  font-size: 32px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  max-width: 700px;
+  margin-top: 300px;
+  margin-left: 152px;
+  z-index: 2;
+  color: hsl(240, 38%, 20%);
+}
+.name-quote {
+  font-size: 23px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  max-width: 700px;
+  margin-top: 540px;
+  margin-left: 152px;
+  z-index: 2;
+  color: hsl(240, 38%, 20%);
+}
+.career-quote {
+  font-size: 23px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  max-width: 700px;
+  margin-top: 540px;
+  margin-left: 315px;
+  z-index: 2;
+  color: hsl(240, 18%, 77%);
+}
+/* /* Miguel you were adjusting the shadow on the button and picture */
+
+.rightbutton {
+  position: absolute;
+  height: 50px;
+  width: 55px;
+  margin-top: 650px;
+  margin-left: 835px;
+  z-index: 2;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-style: none;
+  -webkit-box-shadow: 0 8px 6px -6px rgb(133, 131, 131);
+  -moz-box-shadow: 0 8px 6px -6px rgb(95, 93, 93);
+  box-shadow: 0 8px 6px -6px rgb(115, 115, 115);
+}
+.leftbutton {
+  position: absolute;
+  height: 50px;
+  width: 55px;
+  margin-top: 650px;
+  margin-left: 780px;
+  z-index: 2;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-style: none;
+  -webkit-box-shadow: 0 8px 6px -6px rgb(108, 106, 106);
+  -moz-box-shadow: 0 8px 6px -6px rgb(112, 109, 109);
+  box-shadow: 0 8px 6px -6px rgb(132, 131, 131);
+}
