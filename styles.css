@@ -91,6 +91,7 @@
   margin-left: 315px;
   z-index: 2;
   color: hsl(240, 18%, 77%);
+  text-align: center;
 }
 
 .rightbutton {
@@ -117,10 +118,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-  /* * {
+  * {
     margin: 0;
     padding: 0;
-  } */
+  }
   .container {
     display: flex;
     max-height: 820px;
@@ -128,6 +129,7 @@
 
   .slope-img {
     position: absolute;
+    margin-top: 100px;
     height: 100px;
     width: 400px;
   }
@@ -137,9 +139,10 @@
     display: none;
   }
   .arrows-img {
-    position: absolute;
-    margin: 0;
-    display: none;
+    padding: 0;
+    margin-top: 450px;
+    margin-left: 200px;
+    max-width: 60px;
   }
   .container-content {
     display: none;
@@ -172,7 +175,7 @@
     border-radius: 5px;
     position: absolute;
     margin-left: 82px;
-    margin-top: 55px;
+    margin-top: 100px;
     z-index: 1;
     box-shadow: 0 50px 40px -50px hsl(240, 38%, 20%);
     max-width: 315px;
@@ -182,7 +185,7 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    margin-top: 439px;
+    margin-top: 500px;
     margin-left: 67px;
     z-index: 2;
     color: hsl(240, 38%, 20%);
@@ -195,7 +198,7 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    margin-top: 615px;
+    margin-top: 700px;
     margin-left: 176.5px;
     z-index: 2;
     color: hsl(240, 38%, 20%);
@@ -206,11 +209,11 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    margin-top: 640px;
+    margin-top: 720px;
     margin-left: 108px;
     z-index: 2;
     color: hsl(240, 18%, 77%);
-    max-width: 275px;
+    max-width: 300px;
     text-align: center;
   }
 
@@ -218,7 +221,7 @@
     position: absolute;
     height: 50px;
     width: 55px;
-    margin-top: 348px;
+    margin-top: 390px;
     margin-left: 240px;
     z-index: 2;
     border-bottom-right-radius: 25px;
@@ -229,7 +232,7 @@
     position: absolute;
     height: 50px;
     width: 55px;
-    margin-top: 348px;
+    margin-top: 390px;
     margin-left: 185px;
     z-index: 2;
     border-bottom-left-radius: 25px;
