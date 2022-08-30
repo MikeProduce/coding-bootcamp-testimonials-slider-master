@@ -11,6 +11,8 @@
 .slope-img {
   position: absolute;
   padding-top: 666px;
+  /* min-width: 610px;
+  min-height: 154px; */
 }
 .round-img {
   position: absolute;
@@ -62,7 +64,7 @@
   position: absolute;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  max-width: 700px;
+  max-width: 632px;
   margin-top: 300px;
   margin-left: 152px;
   z-index: 2;
@@ -112,4 +114,126 @@
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border-style: none;
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    max-height: 820px;
+  }
+
+  .slope-img {
+    position: absolute;
+    height: 100px;
+    width: 400px;
+  }
+  .round-img {
+    padding: 0;
+    width: 500px;
+    height: 1000px;
+  }
+  .arrows-img {
+    position: absolute;
+    margin: 0;
+    display: none;
+  }
+  .container-content {
+    display: none;
+    animation: fade-in 750ms forwards;
+  }
+  .container-content2 {
+    animation: fade-out 750ms forwards;
+    animation: fade-in 750ms forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opactiy: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+    }
+  }
+
+  .girl-img {
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 82px;
+    margin-top: 55px;
+    z-index: 1;
+    box-shadow: 0 50px 40px -50px hsl(240, 38%, 20%);
+    max-width: 315px;
+  }
+  .quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin-top: 439px;
+    margin-left: 67px;
+    z-index: 2;
+    color: hsl(240, 38%, 20%);
+    max-height: 200px;
+    max-width: 345px;
+    text-align: center;
+  }
+  .name-quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 615px;
+    margin-left: 176.5px;
+    z-index: 2;
+    color: hsl(240, 38%, 20%);
+    max-width: 275px;
+  }
+  .career-quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 640px;
+    margin-left: 108px;
+    z-index: 2;
+    color: hsl(240, 18%, 77%);
+    max-width: 275px;
+    text-align: center;
+  }
+
+  .rightbutton {
+    position: absolute;
+    height: 50px;
+    width: 55px;
+    margin-top: 348px;
+    margin-left: 240px;
+    z-index: 2;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-style: none;
+  }
+  .leftbutton {
+    position: absolute;
+    height: 50px;
+    width: 55px;
+    margin-top: 348px;
+    margin-left: 185px;
+    z-index: 2;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-style: none;
+  }
 }
