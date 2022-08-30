@@ -117,10 +117,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-  * {
+  /* * {
     margin: 0;
     padding: 0;
-  }
+  } */
   .container {
     display: flex;
     max-height: 820px;
@@ -133,8 +133,8 @@
   }
   .round-img {
     padding: 0;
-    width: 500px;
-    height: 1000px;
+    max-height: 500px;
+    display: none;
   }
   .arrows-img {
     position: absolute;
