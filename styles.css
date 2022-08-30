@@ -24,10 +24,31 @@
 }
 .container-content {
   display: none;
+  animation: fade-in 750ms forwards;
 }
 .container-content2 {
-  display: none;
+  animation: fade-out 750ms forwards;
+  animation: fade-in 750ms forwards;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opactiy: 1;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
 .girl-img {
   border-radius: 5px;
   position: absolute;
@@ -69,7 +90,6 @@
   z-index: 2;
   color: hsl(240, 18%, 77%);
 }
-/* /* Miguel you were adjusting the shadow on the button and picture */
 
 .rightbutton {
   position: absolute;
@@ -81,7 +101,6 @@
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   border-style: none;
-  /* box-shadow: 1px 7px 6px -6px rgb(115, 115, 115); */
 }
 .leftbutton {
   position: absolute;
@@ -93,7 +112,4 @@
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border-style: none;
-  /* -webkit-box-shadow: 0 8px 6px -6px rgb(108, 106, 106);
-  -moz-box-shadow: 0 8px 6px -6px rgb(112, 109, 109);
-  box-shadow: 1px 7px 6px -6px rgb(132, 131, 131); */
 }

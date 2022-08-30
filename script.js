@@ -4,11 +4,8 @@ const content2 = document.getElementById("container-content2");
 const leftbutton = document.getElementById("leftbutton");
 const rightbutton = document.getElementById("rightbutton");
 
-// const eachslide = [content1, content2];
-
-var i = 0;
-var images = [];
-
+let i = 0;
+let images = [];
 images[1] = content1;
 images[2] = content2;
 
