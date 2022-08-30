@@ -86,7 +86,19 @@
   position: absolute;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  max-width: 700px;
+  width: 400px;
+  margin-top: 540px;
+  margin-left: 315px;
+  z-index: 2;
+  color: hsl(240, 18%, 77%);
+  text-align: center;
+}
+.career-quote1 {
+  font-size: 23px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  width: 150px;
   margin-top: 540px;
   margin-left: 315px;
   z-index: 2;
@@ -209,11 +221,22 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    margin-top: 720px;
-    margin-left: 108px;
+    margin-top: 725px;
+    margin-left: 100px;
     z-index: 2;
     color: hsl(240, 18%, 77%);
     max-width: 300px;
+  }
+  .career-quote1 {
+    font-size: 23px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    width: 150px;
+    margin-top: 725px;
+    margin-left: 165px;
+    z-index: 2;
+    color: hsl(240, 18%, 77%);
     text-align: center;
   }
 
