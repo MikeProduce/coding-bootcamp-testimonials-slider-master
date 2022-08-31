@@ -266,3 +266,115 @@
     border-style: none;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    max-height: 820px;
+  }
+
+  .slope-img {
+    position: absolute;
+    margin-top: 100px;
+    height: 100px;
+    width: 400px;
+  }
+  .round-img {
+    padding: 0;
+    margin-top: 70px;
+    margin-left: 10px;
+    width: 100%;
+    height: 355px;
+  }
+  .arrows-img {
+    padding: 0;
+    margin-top: 450px;
+    margin-left: 169.5px;
+    max-width: 60px;
+  }
+
+  .girl-img {
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 105px;
+    z-index: 1;
+    box-shadow: 0 50px 40px -50px hsl(240, 38%, 20%);
+    max-width: 290px;
+  }
+  .quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin-top: 500px;
+    margin-left: 26px;
+    z-index: 2;
+    color: hsl(240, 38%, 20%);
+    max-height: 200px;
+    max-width: 345px;
+    text-align: center;
+  }
+  .name-quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 700px;
+    margin-left: 130px;
+    z-index: 2;
+    color: hsl(240, 38%, 20%);
+    max-width: 275px;
+  }
+  .career-quote {
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 725px;
+    margin-left: 49px;
+    z-index: 2;
+    color: hsl(240, 18%, 77%);
+    max-width: 300px;
+  }
+  .career-quote1 {
+    font-size: 23px;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    width: 150px;
+    margin-top: 725px;
+    margin-left: 124px;
+    z-index: 2;
+    color: hsl(240, 18%, 77%);
+    text-align: center;
+  }
+
+  .rightbutton {
+    position: absolute;
+    height: 50px;
+    width: 55px;
+    margin-top: 375px;
+    margin-left: 209px;
+    z-index: 2;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-style: none;
+  }
+  .leftbutton {
+    position: absolute;
+    height: 50px;
+    width: 55px;
+    margin-top: 375px;
+    margin-left: 155px;
+    z-index: 2;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-style: none;
+  }
+}
