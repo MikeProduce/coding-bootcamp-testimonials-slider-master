@@ -4,6 +4,8 @@ const content2 = document.getElementById("container-content2");
 const leftbutton = document.getElementById("leftbutton");
 const rightbutton = document.getElementById("rightbutton");
 
+// how to slideshow works
+
 let i = 0;
 let images = [];
 images[1] = content1;
@@ -34,3 +36,14 @@ var previousImage = function () {
 };
 rightbutton.addEventListener("click", nextImage);
 leftbutton.addEventListener("click", previousImage);
+
+// code for the button down events
+
+document.addEventListener("keydown", (e) => {
+  e = e || window.event;
+  if (e.keyCode === 37) {
+    previousImage();
+  } else if (e.keyCode === 39) {
+    nextImage();
+  }
+});
