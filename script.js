@@ -1,49 +1,49 @@
-"use strict";
 const content1 = document.getElementById("container-content");
 const content2 = document.getElementById("container-content2");
+const content3 = document.getElementById("container-content3");
 const leftbutton = document.getElementById("leftbutton");
 const rightbutton = document.getElementById("rightbutton");
 
 // how to slideshow works
+const quotes = [content1, content2];
+let currentQuoteIndex = 0;
 
-let i = 0;
-let images = [];
-images[1] = content1;
-images[2] = content2;
+function updateQuoteDisplay(nextQuoteIndex) {
+  quotes[currentQuoteIndex].style.display = "none";
+  quotes[nextQuoteIndex].style.display = "block";
+}
 
-var nextImage = function () {
-  if (i < images.length) {
-    images[i++];
-    images[i++].style.display = "block";
-    images[i++].style.display = "none";
-  } else {
-    images[i--];
-    images[i--].style.display = "block";
-    images[i--].style.display = "none";
-  }
-};
+function atLastQuote() {
+  return currentQuoteIndex === quotes.length - 1;
+}
 
-var previousImage = function () {
-  if (i < images.length) {
-    images[i++];
-    images[i++].style.display = "block";
-    images[i++].style.display = "none";
-  } else {
-    images[i--];
-    images[i--].style.display = "block";
-    images[i--].style.display = "none";
-  }
-};
-rightbutton.addEventListener("click", nextImage);
-leftbutton.addEventListener("click", previousImage);
+function atFirstQuote() {
+  return currentQuoteIndex === 0;
+}
+
+function next() {
+  const nextQuoteIndex = atLastQuote() ? 0 : currentQuoteIndex + 1;
+  updateQuoteDisplay(nextQuoteIndex);
+  currentQuoteIndex = nextQuoteIndex;
+}
+
+function previous() {
+  const nextQuoteIndex = atFirstQuote()
+    ? quotes.length - 1
+    : currentQuoteIndex - 1;
+  updateQuoteDisplay(nextQuoteIndex);
+  currentQuoteIndex = nextQuoteIndex;
+}
+
+rightbutton.addEventListener("click", next);
+leftbutton.addEventListener("click", previous);
 
 // code for the button down events
-
 document.addEventListener("keydown", (e) => {
   e = e || window.event;
-  if (e.keyCode === 37) {
-    previousImage();
-  } else if (e.keyCode === 39) {
-    nextImage();
+  if (e.key === "ArrowLeft") {
+    previous();
+  } else if (e.key === "ArrowRight") {
+    next();
   }
 });
